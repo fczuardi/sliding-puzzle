@@ -38,14 +38,30 @@ function shuffleMap(tileMap)
     end
 end
 
+function drawLines(tileMap)
+    local totalColumns, totalLines = tileMap:getSize()
+    local tileWidth, tileHeight = tileMap:getTileSize()
+    for column = 1, totalColumns do
+        gfx.drawLine(column * tileWidth, 0, column * tileWidth,
+                     totalLines * tileHeight)
+    end
+    for line = 1, totalLines do
+        gfx.drawLine(0, line * tileHeight, totalColumns * tileWidth,
+                     line * tileHeight)
+    end
+
+end
+
 function gameSetup()
     local images, errorMessage = gfx.imagetable.new(baseImagePath)
     assert(images, errorMessage)
     map = makeMap(images)
     shuffleMap(map)
     map:draw(1, 1)
+    drawLines(map)
 end
 
 gameSetup()
 function playdate.update()
+
 end
