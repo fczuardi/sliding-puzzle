@@ -4,6 +4,9 @@
   - from [Open Clipart][openclipart]
   - by [j4p4n](https://openclipart.org/artist/j4p4n)
   - License: [Creative Commons Zero 1.0 Public Domain License][cczero]
+1. [Down Arrow Icon](https://www.kenney.nl/assets/game-icons)
+  - from [Kenney][kenney]
+  - License: [Creative Commons Zero 1.0 Public Domain License][cczero]
 
 [openclipart]: https://openclipart.org/
 [cczero]: https://creativecommons.org/publicdomain/zero/1.0/
